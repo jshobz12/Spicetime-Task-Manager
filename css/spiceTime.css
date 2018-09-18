@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    /* font-size: 0; */
+}
+.app-container{
+    background-color: rgb(150, 88, 88);
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    font-size: 24px;
+}
+.header{
+    height: 80px;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: tomato;
+    position: fixed;
+    text-shadow: 5px 1px rgb(159, 12, 12);
+    font-size: 50px;
+}
+.background-list{
+    background-color: bisque;
+    border-radius: 15px;
+    height: 75vh;
+    width: 50vw;
+    margin-top: 100px;
+    position: absolute;
+    left: calc(25vw - 15px);
+    z-index: 0;
+}
+.shown-list{
+    background-color: rgb(241, 238, 233);
+    border-radius: 15px;
+    height: 75vh;
+    width: 50vw;
+    margin-top: 150px;
+    position: absolute;
+    left: 25vw;
+    z-index: 1;
+    overflow:auto;
+}
+.list-title{
+    font-size: 24px;
+}
+.list-item-container{
+    border-bottom: solid 1px black;
+    height: 40px;
+    text-align: left;
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+.mock-buttons-container{
+    position: absolute;
+    right: 0;
+    padding-right: 20px;
+    display: inline-block;
+    opacity: 0;
+    width: calc(100% - 75px);
+    text-align: right;
+}
+.mock-buttons-container:hover{
+    opacity: 1;
+}
+
+.add-spice-button{
+    width:12px;
+    height:18px;
+    border:1px solid black;
+    background-image: url("");
+    background-repeat: no-repeat;
+    display: inline-block;
+    position:absolute;
+}
+.add-chili-btn{
+    background-image: url('http://cdn.onlinewebfonts.com/svg/img_479197.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 6px;
+    margin: 20px;
+}
+.add-chili-btn>i{
+    font-size: 20px;
+    color: tomato;
+}
+.add-task-input{
+    border: none;
+    background-color: inherit;
+    height: 30px;
+    width: 70%;
+    font-size: 20px;
+    font-family: inherit;
+}
+.add-btn{
+    height: 30px;
+    width: calc(30% - 30px);
+    min-width: 40px;
+    background-color: tomato;
+    color: white;
+    vertical-align: top;
+    margin-left: 10px;
+}
+.not-displayed{
+    display: none;
+}
+
+.complete-task-button{
+    width:12px;
+    height:18px;
+    border:1px solid black;
+    display: inline-block;
+}
+.delete-task-button{
+    width:12px;
+    height:18px;
+    border:1px solid black;
+    display: inline-block;
+}
+.set-reminder-button{
+    width:12px;
+    height:18px;
+    border:1px solid black;
+    display: inline-block;
+    background-image:url("");
+}
+.fa.fa-fire{
+    margin-left: 10px;
+}
